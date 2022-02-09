@@ -39,12 +39,20 @@ class DitSeries:
         
        
 
-    def __sub__(self, other: int) -> "DitSeries":
+    def __sub__(self, arg2: int) -> "DitSeries":
         """Soustraction """
+        data = self.data
+        for i in data:
+            sus = data[int,t.Any] - arg2
+        return sus
 
 
-    def __add__(self, other: int) -> "DitSeries":
+    def __add__(self, arg3: int) -> "DitSeries":
         """Addition"""
+        data = self.data[int,t.Any]
+        for i in data:
+            add = data[int,t.Any] - arg3
+        return add
 
     def __gt__(self, other: int) -> "DitSeries":
         """Comparaison (supérieur) """
